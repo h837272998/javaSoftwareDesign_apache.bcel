@@ -79,7 +79,7 @@ public class BCELTiming {
                 Constants.GETSTATIC));
         instructionList.append(InstructionConst.DUP);
         instructionList.append(InstructionConst.DUP);
-        String text = "Call to method " + methodGen.getName() + " took ";
+        String text = "Call to method2 " + methodGen.getName() + " took ";
         instructionList.append(new PUSH(poolGen, text));
         instructionList.append(instructionFactory.createInvoke("java.io.PrintStream", "print", Type.VOID, new Type[] { Type.STRING },
                 Constants.INVOKEVIRTUAL));
